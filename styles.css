@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+  font-weight: 700;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: #555;
+  background: #ecf0f3;
+}
+
+.login-div {
+  width: 410px;
+  height: 450px;
+  padding: 50px 35px 35px 35px;
+  margin-top: 30px;
+  border-radius: 40px;
+  /* same color of the body */
+  background-color: #ecf0f3;
+  /* box shad 1 - bottom right dark
+    box shad 2 - top left bright shadow
+    - this gives an impression that light falls from the 
+    top left corner of the screen
+  */
+  box-shadow: 13px 13px 20px #cbced1, -13px 13px 20px #ffff;
+}
+
+.logo {
+  background: url('https://robohash.org/al0.png?size=100x100');
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -35px;
+  /* logo shadow */
+  box-shadow: 0px 0px 2px #5f5f5f,
+    /* offset with same color of login div*/ 0px 0px 0px 5px #ecf0f3,
+    /* bottom right shadow */ 8px 8px 15px #a7aaaf,
+    /* top let shadow */ -8px -8px 15px #ffff;
+}
+
+.title {
+  text-align: left;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.fields {
+  width: 100%;
+  padding: 40px 20px 5px 5px;
+}
+
+/* changing the default input styles */
+.fields input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  height: 150px;
+  color: #555;
+  padding: 0px 0px 80px 20px;
+  width: 340px;
+  border-style: none;
+}
+
+/* sunken effect to the input fields */
+
+.post {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  border-radius: 25px;
+  width: 350px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffff;
+}
+
+/* svg height and margin */
+.fields svg {
+  height: 22px;
+  margin: 0 10px -3px 25px;
+}
+
+.post-button {
+  margin-left: -10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #24cfaa;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffff;
+  transition: 0.5s;
+}
+
+.post-button:hover {
+  background: #2fdbb6;
+}
+
+.post-button:active {
+  background: #1da88a;
+}
+
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+}
